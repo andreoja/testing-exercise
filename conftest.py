@@ -14,7 +14,7 @@ def existing_file():
         file_name = tmp_file.name
 
     with open(file_name, 'w') as f:
-        f.write("Test, data")
+        f.write("2020-01-18T09:00:00, data")
 
     yield file_name
 
@@ -27,5 +27,3 @@ def writable_file():
         file_name = tmp_file.name
 
     yield file_name
-
-    os.remove(file_name)
